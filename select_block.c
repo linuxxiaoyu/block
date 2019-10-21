@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
 
         if (FD_ISSET(socket_fd, &readmask)) {
         	printf("need read socket_fd\n");
-		}
+	}
 
         if (FD_ISSET(STDIN_FILENO, &readmask)) {
             if (fgets(send_line, MAXLINE, stdin) != NULL) {
