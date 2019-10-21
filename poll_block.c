@@ -91,7 +91,7 @@ int main(int argc, char **argv) {
                 continue;
             if (event_set[i].revents & (POLLRDNORM | POLLERR)) {
                 printf("poll need to read\n");
-				if (--ready_number <= 0)
+		if (--ready_number <= 0)
                     break;
             }
         }
